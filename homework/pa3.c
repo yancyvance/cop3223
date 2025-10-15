@@ -30,12 +30,16 @@ int main(void) {
     int T;
     int nums[MAX_COUNT];
     
+    // Determine the number of test cases
     scanf("%d", &T);
     
+    // For each test case
     for(int i = 1; i <= T; i++) {
+        // Read 10 numbers and store them in the array
         for(int j = 0; j < MAX_COUNT; j++)
             scanf("%d", &nums[j]);
         
+        // Print the secret code for the test case
         printf("%d: %d\n", i, compute_secret(nums, MAX_COUNT));
     }
     

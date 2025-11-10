@@ -22,12 +22,12 @@
 char *trim_string(char *str);
 char *to_lower(char *str);
 int populate_list(char list[MAX_WORDS][MAX_LEN], int *size,
-                  int max_size, char *filename);
+                  int max_size, char *fname);
 void print_list(char words[MAX_WORDS][MAX_LEN], int size);
+int contains_word(char words[MAX_WORDS][MAX_LEN], int size, char *query);
 void combine_lists(char list1[MAX_WORDS][MAX_LEN], int list1_size,
                    char list2[MAX_WORDS][MAX_LEN], int list2_size,
                    char list3[MAX_WORDS][MAX_LEN], int *list3_size);
-int contains_word(char words[MAX_WORDS][MAX_LEN], int size, char *query);
 void selection_sort(char words[MAX_WORDS][MAX_LEN], int size);
 
 
@@ -90,7 +90,7 @@ char *to_lower(char *str) {
 }
 
 int populate_list(char list[MAX_WORDS][MAX_LEN], int *size,
-                  int max_size, char *filename) {
+                  int max_size, char *fname) {
     // TODO: Complete this function
     // TODO 3 BEGIN
 
@@ -112,28 +112,28 @@ void print_list(char words[MAX_WORDS][MAX_LEN], int size) {
     // TODO 4 END
 }
 
-void combine_lists(char list1[MAX_WORDS][MAX_LEN], int list1_size,
-                   char list2[MAX_WORDS][MAX_LEN], int list2_size,
-                   char list3[MAX_WORDS][MAX_LEN], int *list3_size) {
+int contains_word(char words[MAX_WORDS][MAX_LEN], int size, char *query) {
     // TODO: Complete this function
     // TODO 5 BEGIN
 
 
 
 
- 
-    // TODO 5 END 
+
+    // TODO 5 END
 }
 
-int contains_word(char words[MAX_WORDS][MAX_LEN], int size, char *query) {
+void combine_lists(char list1[MAX_WORDS][MAX_LEN], int list1_size,
+                   char list2[MAX_WORDS][MAX_LEN], int list2_size,
+                   char list3[MAX_WORDS][MAX_LEN], int *list3_size) {
     // TODO: Complete this function
     // TODO 6 BEGIN
 
 
 
 
-
-    // TODO 6 END
+ 
+    // TODO 6 END 
 }
 
 void selection_sort(char words[MAX_WORDS][MAX_LEN], int size) {

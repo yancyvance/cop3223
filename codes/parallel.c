@@ -37,6 +37,8 @@ int main(void) {
         fscanf(ifile, "%d", &years[i]);
     }
     
+    fclose(ifile);
+    
     for(int i = 0; i < count; i++) {
         printf("%d %s\n", 2025-years[i], names[i]);
     }

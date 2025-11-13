@@ -43,12 +43,17 @@ int main(void) {
     
     // TODO: Print the name of the oldest person
     
+    
+    
     return 0;
 }
 
 
 char *trim_string(char *str) {
-    str[strcspn(str, "\r\n")] = '\0';
+    int pos = strcspn(str, "\r\n");
+    
+    str[pos] = '\0';
+    
     return str;
 }
 

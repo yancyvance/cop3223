@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #define MAX_LEN 101
 
-// Example 6: One dynamically allocated Person struct with dynamic field
+// Example 6: One dynamically allocated Person struct with a dynamic field
 
 typedef struct Person_s {
     char *name;

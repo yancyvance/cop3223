@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Example 2: Dynamically allocated 2D array of int values (Jagged Arrays)
+// Example 7: Dynamically allocated 2D array of int values (Jagged Arrays)
 
 int main(void) {
     // TODO 1: Ask the user how many Rows and Cols

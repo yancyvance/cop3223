@@ -47,7 +47,7 @@ Person *create_person(const char *n, int y) {
         
     np->year = y;
     
-    // return by value
+    // return a reference
     return np;
 }
 

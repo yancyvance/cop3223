@@ -62,7 +62,6 @@ void print_reverse_array(int arr[], int size) {
     printf("\n");
 }
 
-
 int compute_sum(int arr[], int size) {
     int sum = 0;
     for(int i = 0; i < size; i++) {
@@ -92,5 +91,4 @@ void reverse_array(int arr[], int size) {
         arr[i] = arr[size-1-i];
         arr[size-1-i] = tmp;
     }
-    
 }

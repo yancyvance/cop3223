@@ -5,6 +5,8 @@
 // Function Prototypes
 void print_2darray_row(int arr[MAX_ROWS][MAX_COLS], int rows, int cols);
 void print_2darray_col(int arr[MAX_ROWS][MAX_COLS], int rows, int cols);
+void print_array(int arr[], int size);
+void print_2darray_row2(int arr[MAX_ROWS][MAX_COLS], int rows, int cols);
 
 
 int main(void) {
@@ -51,5 +53,24 @@ void print_2darray_col(int arr[MAX_ROWS][MAX_COLS], int rows, int cols) {
             printf("%d ", arr[j][i]);
         }
         printf("\n");
+    }
+}
+
+void print_array(int arr[], int size) {
+    for(int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
+void print_2darray_row2(int arr[MAX_ROWS][MAX_COLS], int rows, int cols) {
+    // Think of MAX_ROWS and MAX_COLS as the capacity
+    // while rows and cols are the logical sizes.
+    
+    // This is just another version of the print 2D array (row-major)
+    // Notice that we are calling a helper function and passing
+    // the entire row, which happens to be an array!
+    for(int i = 0; i < rows; i++) {
+        print_array( arr[i], cols );
     }
 }

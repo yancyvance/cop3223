@@ -49,7 +49,7 @@ void introduce(Person p) {
 }
 
 void set_year(Person *p, int y) {
-    //p.year = y;
+    //p.year = y;           // invalid because p is now a pointer to a Person
     //(*p).year = y;
     p->year = y;
 }

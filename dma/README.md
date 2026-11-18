@@ -1,6 +1,6 @@
 # Dynamic Memory Allocation in C
 
-These Intro to C demos start with a single dynamically allocated integer and build up to arrays of structures and arrays of pointers to structures.
+These Intro to C demos start with a single dynamically allocated integer and build up to arrays of structures, arrays of pointers to structures, and a two-dimensional array of integers.
 
 ## `01 dma.c`
 
@@ -29,6 +29,12 @@ Allocate one contiguous array of `Person` values using a `Person *`. Each `peopl
 ## `07 dma.c`
 
 Allocate an array of `Person *` pointers using a `Person **`. Allocate each `Person` separately and then allocate its name. Each `people[i]` is a pointer, so use `people[i]->name`. Free each name and its `Person`, then free the pointer array.
+
+## `08 dma.c`
+
+Read the number of rows and columns, then allocate a two-dimensional array of integers one row at a time. An `int **` points to the first slot in an array of row pointers. Each `arr[i]` points to a separately allocated row, and `arr[i][j]` accesses an integer in that row. The demo fills the array with consecutive integers, prints it, and frees each row before freeing the pointer array. Like `07 dma.c`, it allocates the pointer array first and then allocates the blocks that its elements point to.
+
+This is a common pattern for dynamically allocating a 2D array. It works for other element types too. For example, for `double` elements, use `double **` for the array of row pointers, allocate the pointer slots with `sizeof(double *)`, and allocate each row’s elements with `sizeof(double)`.
 
 ## Dynamic Allocation Patterns
 
